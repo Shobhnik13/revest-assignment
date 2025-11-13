@@ -17,7 +17,6 @@ export class OrdersService {
     async create(dto: CreateOrderDto) {
         const url = `${process.env.PRODUCT_SERVICE_URL || "http://localhost:4444"}/api/products/${dto.productId}`;
 
-        // Fetch product from product-service
         let product;
         try {
             const response = await firstValueFrom(this.http.get(url));
@@ -26,7 +25,6 @@ export class OrdersService {
             throw new NotFoundException("Product not found in product-service");
         }
 
-        // Check stock
         if (product.stock < dto.quantity) {
             throw new BadRequestException("Insufficient stock");
         }

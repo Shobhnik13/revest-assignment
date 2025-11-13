@@ -7,7 +7,7 @@ import { HttpModule } from '@nestjs/axios';
   imports: [
     HttpModule,
     MongooseModule.forRoot(
-      process.env.MONGO_URI || "mongodb://localhost:27017/orders_db"
+      process.env.MONGO_URI || ""
     ),
     OrdersModule,
   ],
