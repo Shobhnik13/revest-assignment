@@ -20,14 +20,17 @@ This assignment consists of **3 independently running applications**:
 - Manages products  
 - Provides CRUD operations  
 - Stores product data in MongoDB  
-- Runs on **port 4444**  
+- Runs on **port 4444**
+- use command npm run start:dev in the product-service folder 
 
 ### 2. Order Service (NestJS)
 - Manages orders  
 - Calls Product Service to fetch product details  
 - Validates stock & calculates order total  
 - Stores product snapshot inside the order  
-- Runs on **port 5555**  
+- Runs on **port 5555**
+-  use command npm run start:dev in the order-service folder 
+
 
 ### 3. Frontend (Next.js + TS)
 - Renders a **dynamic form based on JSON**  
@@ -36,3 +39,4 @@ This assignment consists of **3 independently running applications**:
 - Uses Tailwind for layout  
 - Uses localStorage for persistence  
 - Runs on **port 3000**
+-  use command npm run dev in the frontend folder 
