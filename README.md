@@ -36,8 +36,3 @@ This assignment consists of **3 independently running applications**:
 - Uses Tailwind for layout  
 - Uses localStorage for persistence  
 - Runs on **port 3000**
-
----
-
-# 🏗️ System Architecture (High Level)
-
